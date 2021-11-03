@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+html {
+      min-height: 100%;
+}
+
+body {
+      height: calc(100vh - 6em);
+      padding: 2em;
+      color: yellow;
+      background-color: rgb(255, 255, 255);
+}
+
+.line {
+      position: relative;
+      top: 2%;
+      width: 16em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      font-size: 5em;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;transform: translateY(-50%);
+}
+
+
+.anim-typewriter {
+      animation: typewriter 4s steps(40) 1s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 16em;
+      }
+}
+
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(25, 25, 25, 0.75);
+      }
+      to {
+            border-right-color: black;
+      }
+}
+section{
+  
+  background-size: cover;
+  height: 5vh;
+}
